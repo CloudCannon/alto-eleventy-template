@@ -1,0 +1,27 @@
+<footer {%if footer.footer_width == 'contain' %} style="max-width: 1000px" {% endif %}>
+    <span class="editor-link"><a href="cloudcannon:collections/data/footer.yml" data-cms-bind-style="sidebar" class="btn"><strong>&#9998;</strong>Edit Footer</a></span>
+    {% for link in footer.footer_links %}
+        {% if link.link_title %}
+            {% assign startsWith = 'http' %}
+            {% assign checkArray = link.url_path | split:startsWith %}
+            {% if checkArray[0] == blank %}
+                <a href="{{ link.url_path }}" target="_self">{{ link.link_title }}</a>
+            {% else %}
+                <a href="/{{ link.url_path | url }}" target="_self">{{ link.link_title }}</a>
+            {% endif %}
+        {% endif %} 
+        {% if link.image_path %}
+            {% assign startsWith = 'http' %}
+            {% assign checkArray = link.url_path | split:startsWith %}
+            {% if checkArray[0] == blank %}
+                <a href="{{ link.url_path }}" target="_blank">
+                    <img class="cloudcannon" src="{{ link.image_path }}" alt="{{ link.image_alt_text }}" >
+                </a>
+            {% else %}
+                <a href="/{{ link.url_path | url }}" target="_blank">
+                    <img class="cloudcannon" src="{{ link.image_path }}" alt="{{ link.image_alt_text }}" >
+                </a>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</footer>

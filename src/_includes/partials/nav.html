@@ -1,0 +1,58 @@
+<div class="header" x-data="{ isOpen: false }">
+    <nav class="row" aria-label="Project Navigation">
+        <a class="logo-link" href="/">
+            {% if nav.logo.logo_image  %}
+                <img class="logo logo-light" src="{{ nav.logo.logo_image }}" alt="{{ meta.project_name }} Logo">
+                {% if nav.logo.logo_image_dark %}
+                    <img class="logo logo-dark" src="{{ nav.logo.logo_image_dark }}" alt="{{ meta.project_name }} Logo">
+                {% endif %}
+            {% else %}
+                <span class="logo-heading">{% if nav.logo.logo_heading %}{{ nav.logo.logo_heading }} {% else %} logo {% endif %}</span>
+            {% endif %}
+        </a>
+        <span class="editor-link"><a href="cloudcannon:collections/data/nav.yml" data-cms-bind-style="sidebar" class="btn"><strong>&#9998;</strong>Edit Navigation</a></span>
+        <div class="nav-content">
+            <ul>
+                {% for link in nav.nav_links %}
+                <li>
+                    {% assign startsWith = 'http' %}
+                    {% assign checkArray = link.url_path | split:startsWith %}
+                    {% if checkArray[0] == blank %}
+                        <a {% if link.link_icon_path %} target="_blank" {% else %} target="_self" {% endif %} href="{{ link.link_url }}">
+                    {% else %}
+                        <a {% if link.link_icon_path %} target="_blank" {% else %} target="_self" {% endif %} href="/{{ link.link_url | url }}">
+                    {% endif %}
+                        {{ link.link_label }}
+                        {% if link.link_icon_path %}
+                            <img class="nav-links" src="{{ link.link_icon_path }}" alt="{{ meta.project_name }} on {{ link.link_title }}" width="32" height="32">
+                        {% endif %}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+               
+            
+            <div class="dark-mode-toggle">
+                <button id="js-dark-mode" class="theme-btn" aria-label="dark mode toggle" @click="toggleMode()">
+                    {% include 'partials/svg/darklightmode.svg' %}
+                </button>
+            </div>
+            <div class="ham">
+                <button :aria-expanded="isOpen"
+                        aria-controls="docnav-inner docnav-inner-mobile"
+                        @click="isOpen = !isOpen" x-cloak>
+                    <p>{{ nav.side_nav_title }} Menu</p>
+                    <span></span>
+               </button>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="docnav-mob"
+        aria-label="{{ nav.side_nav_title }} Navigation"
+        :aria-expanded="isOpen">
+        <div id="docnav-inner-mobile" class="docnav-inner" :hidden="!isOpen" x-cloak>
+            {% include 'partials/docnav-list.html' %}
+        </div>
+    </nav>
+</div>

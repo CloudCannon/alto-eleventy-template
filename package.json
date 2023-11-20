@@ -1,0 +1,30 @@
+{
+  "name": "alto-eleventy-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "eleventy:build": "eleventy",
+    "eleventy:watch": "ELEVENTY_ENV=development eleventy --serve",
+    "sass:watch": "sass --no-source-map --watch src/assets/styles/site.scss _site/css/site.css",
+    "sass:build": "sass --no-source-map src/assets/styles/site.scss _site/css/site.css",
+    "start": "npm-run-all sass:build --parallel sass:watch eleventy:watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "pagefind": "^1.0.4"
+  },
+  "dependencies": {
+    "alpinejs": "^3.13.2",
+    "esbuild": "^0.19.4",
+    "js-yaml": "^4.1.0",
+    "markdown-it": "^13.0.2",
+    "markdown-it-named-headings": "^1.1.0",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.66.1"
+  }
+}
