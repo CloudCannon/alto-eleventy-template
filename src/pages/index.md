@@ -49,3 +49,15 @@ new PagefindUI({
 ```
 {% endcapture %}
 {% diffcode content %}
+
+{% capture treecontent %}
+package.json
+_includes/
+>> _layouts/
+>  >> default.liquid
+>  >> page.liquid
+>> file.liquid
+_site/
+>> index.html
+{% endcapture %}
+{% tree treecontent %}
