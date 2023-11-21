@@ -1,5 +1,5 @@
 ---
-_schema: default
+_schema: page
 title: Using Shortcodes
 eleventyNavigation:
   key: Using Shortcodes
