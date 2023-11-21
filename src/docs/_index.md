@@ -2,6 +2,7 @@
 title: Getting Started
 eleventyNavigation:
   key: Getting Started
+  order: 1
 layout: layouts/page.html
 permalink: /docs/
 SEO_options:

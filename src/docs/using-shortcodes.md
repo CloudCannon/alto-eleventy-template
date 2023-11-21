@@ -2,6 +2,7 @@
 title: Using Shortcodes
 eleventyNavigation:
   key: Using Shortcodes
+  order: 2
 draft: false
 tags: page
 layout: layouts/page.html

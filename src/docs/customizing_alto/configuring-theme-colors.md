@@ -9,6 +9,7 @@ draft: false
 title: Configuring theme colors
 eleventyNavigation:
   key: Configuring theme colors
+  order: 1
 tags: Customizing Alto
 ---
 Alto has a flexible color palette in both light and dark modes, which can also apply to the embedded Pagefind search tool.

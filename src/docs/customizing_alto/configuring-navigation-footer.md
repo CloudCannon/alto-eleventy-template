@@ -2,6 +2,7 @@
 title: Configuring the navigation and footer
 eleventyNavigation:
   key: Configuring the navigation and footer
+  order: 0
 draft: false
 tags: Customizing Alto
 layout: layouts/page.html
