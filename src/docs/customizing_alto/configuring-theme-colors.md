@@ -1,4 +1,5 @@
 ---
+_schema: default
 layout: layouts/page.html
 permalink: /docs/configuring-theme-colors/
 SEO_options:

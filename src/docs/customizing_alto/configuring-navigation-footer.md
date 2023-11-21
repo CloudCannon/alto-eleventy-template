@@ -1,4 +1,5 @@
 ---
+_schema: default
 title: Configuring the navigation and footer
 eleventyNavigation:
   key: Configuring the navigation and footer
