@@ -1,5 +1,5 @@
 ---
-_schema: default
+_schema: docs
 layout: layouts/page.html
 permalink: /docs/configuring-theme-colors/
 SEO_options:
