@@ -1,5 +1,5 @@
 # Read the CloudCannon documentation for more information on how to use this file:
-# https://cloudcannon.com/documentation/articles/setting-global-configuration/?ssg=Hugo
+# https://cloudcannon.com/documentation/articles/setting-global-configuration/?ssg=Eleventy
 
 # Collections are related sets of content files, typically grouped by folder.
 # Here you can define your collections, as well as any
@@ -14,7 +14,7 @@ collections_config:
     icon: feed
     schemas:
       default:
-        path: schemas/page.md
+        path: ../schemas/page.md
     add_options:
       - name: Add Site Page
         editor: content
@@ -73,7 +73,7 @@ collections_config:
     disable_add_folder: true
     schemas:
       default:
-        path: schemas/docs.md
+        path: ../schemas/docs.md
     add_options:
       - name: Read the docs
         icon: local_library
