@@ -9,7 +9,7 @@ collections_config:
     output: true
     parse_branch_index: true
     disable_add_folder: true
-    path: content
+    path: pages
     base_url: /
     icon: feed
     schemas:
@@ -27,7 +27,7 @@ collections_config:
       base: strict
   Navigation:
     output: true
-    path: data
+    path: _data
     disable_add: true
     disable_add_folder: true
     icon: table_rows
@@ -38,7 +38,7 @@ collections_config:
         - footer.yml
   Theme_Palette:
     output: true
-    path: data
+    path: _data
     disable_add: true
     disable_add_folder: true
     icon: color_lens
@@ -48,7 +48,7 @@ collections_config:
         - theme.yml
   banner:
     output: true
-    path: data
+    path: _data
     disable_add: true
     disable_add_folder: true
     icon: add_alert
@@ -67,7 +67,7 @@ collections_config:
           text: 
             - key: enable_banner
   docs:
-    path: content/docs
+    path: docs
     base_url: /docs
     icon: file
     disable_add_folder: true
@@ -98,7 +98,7 @@ collections_config:
     output: true
   Meta_Data:
     output: false
-    path: data
+    path: _data
     icon: settings
     disable_add: true
     disable_add_folder: true
