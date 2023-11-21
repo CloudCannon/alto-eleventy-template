@@ -423,7 +423,7 @@ _inputs:
 
 _snippets:
   diffcode:
-    snippet: "{{<diffcode>}}\n```[[lang]][[inner]]```\n{{</diffcode>}}"
+    snippet: "{% capture content %}\n```[[lang]][[inner]]```\n{% endcapture %}{% diffcode content %}"
     params: 
       lang:
         parser: argument
@@ -460,7 +460,7 @@ _snippets:
       language:
         type: text
   tree:
-    snippet: "{{<tree>}}[[inner]]{{</tree>}}"
+    snippet: "{% capture treecontent %}[[inner]]{% endcapture %}{% tree treecontent %}"
     params: 
       inner:
         parser: content
