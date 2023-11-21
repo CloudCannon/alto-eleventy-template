@@ -1,5 +1,7 @@
 ---
 title:
+layout:
+permalink:
 eleventyNavigation:
   key:
   order:

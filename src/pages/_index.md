@@ -1,8 +1,6 @@
 ---
-_schema: default
 title: Welcome 👋
 layout: layouts/page.html
-permalink: /
 eleventyNavigation:
   key: Home
   order: 0
