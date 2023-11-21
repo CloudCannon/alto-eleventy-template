@@ -1,4 +1,5 @@
 ---
+_schema: page
 title: Welcome 👋
 layout: layouts/page.html
 eleventyNavigation:

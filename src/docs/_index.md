@@ -1,5 +1,5 @@
 ---
-_schema: default
+_schema: page
 title: Getting Started
 eleventyNavigation:
   key: Getting Started
