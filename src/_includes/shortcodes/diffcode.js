@@ -29,13 +29,13 @@ module.exports = content => {
                         result += line + "\n"
                 })
                 
-                return `<pre class="chroma"><code class="hljs" data-lang='${lang}'>` +
+                return `<pre class="chroma"><code class="" data-lang='${lang}'>` +
                        result +
                        '</code></pre>';
               } catch (__) {}
             }
         
-            return '<pre class="chroma"><code class="hljs">' + md.utils.escapeHtml(str) + '</code></pre>';
+            return '<pre class="chroma"><code class="">' + md.utils.escapeHtml(str) + '</code></pre>';
         }
     }).render(content)
     return result
