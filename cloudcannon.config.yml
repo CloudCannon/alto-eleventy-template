@@ -421,6 +421,65 @@ _snippets_imports:
   eleventy_liquid: true
 
 _snippets:
+  figure:
+    template: eleventy_liquid_shortcode_positional_args
+    definitions:
+      shortcode_name: figure
+      positional_args:
+        - editor_key: src
+          type: string
+        - editor_key: pageTitle
+          type: string    
+        - editor_key: alt
+          type: string
+        - editor_key: link_url
+          type: string
+        - editor_key: link_target
+          type: string
+        - editor_key: link_rel
+          type: string
+        - editor_ley: attr
+          type: string
+        - editor_key: attrlink
+          type: string
+        - editor_key: className
+          type: string
+        - editor_key: width
+          type: string
+        - editor_key: height
+          type: string
+    inline: false
+    preview:
+      text: Figure
+      subtext: Full-width image with an optional caption below.
+      icon: image
+    picker_preview:
+      text: Figure
+      subtext: Full-width image with an optional caption below.
+      icon: image
+    _inputs:
+      src:
+        type: image
+      pageTitle:
+        type: text
+      alt:
+        type: text
+      link_url:
+        type: url
+      link_target:
+        type: text
+      link_rel:
+        type: text
+      attr:
+        type: text
+      attrlink:
+        type: url
+      className:
+        type: text
+      width:
+        type: text
+      height:
+        type: text
   twitter:
     template: eleventy_liquid_shortcode_positional_args
     definitions:

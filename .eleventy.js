@@ -17,6 +17,7 @@ const markdownRenderer = markdownIt(markdownOptions).use(markdownItNamedHeadings
 const twitter = require('./src/_includes/shortcodes/twitter')
 const youtube = require('./src/_includes/shortcodes/youtube')
 const vimeo = require('./src/_includes/shortcodes/vimeo')
+const figure = require('./src/_includes/shortcodes/figure')
 
 const diffcode = require('./src/_includes/shortcodes/diffcode')
 const tree = require('./src/_includes/shortcodes/tree')
@@ -24,13 +25,10 @@ const tree = require('./src/_includes/shortcodes/tree')
 module.exports = function(eleventyConfig) {
 
   // shortcodes
-  eleventyConfig.addShortcode("figure", (image, caption, className) => {
-    return `<figure${className ? ` class="${className}"` : ''}><img src="${image}" />${caption ? `<figcaption>${caption}</figcaption>` : ''}</figure>`;
-  });
-
   eleventyConfig.addShortcode("twitter", twitter)
   eleventyConfig.addShortcode("youtube", youtube)
   eleventyConfig.addShortcode("vimeo", vimeo)
+  eleventyConfig.addShortcode("figure", figure)
   eleventyConfig.addShortcode("diffcode", diffcode)
   eleventyConfig.addShortcode("tree", tree)
 
