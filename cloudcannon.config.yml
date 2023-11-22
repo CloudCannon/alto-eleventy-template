@@ -428,9 +428,6 @@ _snippets:
           editor_key: id
           style:
             output: inline
-          model:
-            editor_key: id
-            optional: false
       user_id:
         parser: argument
         options:
@@ -447,9 +444,9 @@ _snippets:
       subtext: Twitter tweet embed.
       icon: message
     _inputs:
-      id: 
+      twitter_id: 
         type: text
-      user:
+      user_id:
         type: text
 
   vimeo:
