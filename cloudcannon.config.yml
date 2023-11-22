@@ -452,6 +452,50 @@ _snippets:
       user:
         type: text
 
+  vimeo:
+    snippet: "{% twitter id className pageTitle %}"
+    params:
+      id:
+        parser: argument
+        options:
+          editor_key: vimeo_id
+          style:
+            output: inline
+          model:
+            editor_key: vimeo_id
+            optional: false
+      className:
+        parser: argument
+        options:
+          editor_key: className
+          style:
+            output: inline
+          model:
+            editor_key: className
+            optional: false
+      pageTitle:
+        parser: argument
+        options:
+          editor_key: pageTitle
+          style:
+            output: inline
+          model:
+            editor_key: pageTitle
+            optional: false
+    inline: false
+    preview:
+      text: Vimeo    
+      icon: videocam
+    picker_preview:
+      text: Vimeo
+      subtext: Vimeo video embed.
+      icon: videocam
+    _inputs:
+      id: 
+        type: text
+      user:
+        type: text
+
   diffcode:
     snippet: "{% capture content %}\n```[[lang]][[inner]]```\n{% endcapture %}{% diffcode content %}"
     params: 

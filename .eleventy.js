@@ -15,6 +15,8 @@ const markdownRenderer = markdownIt(markdownOptions).use(markdownItNamedHeadings
 
 // shortcode requires
 const twitter = require('./src/_includes/shortcodes/twitter')
+const vimeo = require('./src/_includes/shortcodes/vimeo')
+
 const diffcode = require('./src/_includes/shortcodes/diffcode')
 const tree = require('./src/_includes/shortcodes/tree')
 
@@ -26,6 +28,7 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addShortcode("twitter", twitter)
+  eleventyConfig.addShortcode("vimeo", vimeo)
   eleventyConfig.addShortcode("diffcode", diffcode)
   eleventyConfig.addShortcode("tree", tree)
 

@@ -40,4 +40,4 @@ CloudCannon uses Alto as the documentation site template for our own open-source
 * <a target="_blank" rel="noopener" href="https://reseed.app/">Reseed</a>
 
 
-{% twitter "463440424141459456" "Interior" %}
+{% vimeo "641660551" "" "Video title here" %}
