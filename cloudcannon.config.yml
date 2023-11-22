@@ -459,8 +459,10 @@ _snippets:
       language:
         type: select
         options:
-          values:
-            - as3 : ActionScript 3
+          values: _select_data.languages
+    _select_data:
+      languages:
+        - as3 : ActionScript 3
 
   gist:
     template: eleventy_liquid_shortcode_positional_args
