@@ -38,13 +38,13 @@ CloudCannon uses Alto as the documentation site template for our own open-source
 * <a target="_blank" rel="noopener" href="https://rosey.app/">Rosey</a>
 * <a target="_blank" rel="noopener" href="https://reseed.app/">Reseed</a>
 
-{% capture content %}
-```js
-new PagefindUI({
-    element: "#search",
-+    mergeIndex: [{
-+        bundlePath: "https://docs.example.com/_pagefind"
-+    }]
-})
-```
-{% endcapture %}{% diffcode content %}
+{% capture treecontent %}
+package.json
+_includes/
+>> _layouts/
+>  >> default.liquid
+>  >> page.liquid
+>> file.liquid
+_site/
+>> index.html
+{% endcapture %}{% tree treecontent %}
