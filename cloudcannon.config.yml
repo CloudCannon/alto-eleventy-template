@@ -658,8 +658,7 @@ paths:
   collections: docs
   includes: _includes
   layouts: _includes/layouts
-  static: assets
-  uploads: images/uploads
+  uploads: assets/images/uploads
 
 # Lets you control the look and behaviour of the Source Editor.
 source_editor:
