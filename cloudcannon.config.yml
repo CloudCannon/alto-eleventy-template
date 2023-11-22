@@ -421,6 +421,34 @@ _snippets_imports:
   eleventy_liquid: true
 
 _snippets:
+  gist:
+    template: eleventy_liquid_shortcode_positional_args
+    definitions:
+      shortcode_name: gist
+      positional_args:
+        - editor_key: username
+          type: string        
+        - editor_key: id
+          type: string
+        - editor_key: file
+          type: string
+          optional: true
+    inline: false
+    preview:
+      text: Gist
+      subtext: GitHub Gist embed.
+      icon: integration_instructions
+    picker_preview:
+      text: Gist
+      subtext: GitHub Gist embed.
+      icon: integration_instructions
+    _inputs:
+      username:
+        type: text
+      id:
+        type: text
+      file:
+        type: text      
   figure:
     template: eleventy_liquid_shortcode_positional_args
     definitions:

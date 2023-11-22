@@ -18,6 +18,7 @@ const twitter = require('./src/_includes/shortcodes/twitter')
 const youtube = require('./src/_includes/shortcodes/youtube')
 const vimeo = require('./src/_includes/shortcodes/vimeo')
 const figure = require('./src/_includes/shortcodes/figure')
+const gist = require('./src/_includes/shortcodes/gist')
 
 const diffcode = require('./src/_includes/shortcodes/diffcode')
 const tree = require('./src/_includes/shortcodes/tree')
@@ -29,6 +30,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addShortcode("youtube", youtube)
   eleventyConfig.addShortcode("vimeo", vimeo)
   eleventyConfig.addShortcode("figure", figure)
+  eleventyConfig.addShortcode("gist", gist)
   eleventyConfig.addShortcode("diffcode", diffcode)
   eleventyConfig.addShortcode("tree", tree)
 
