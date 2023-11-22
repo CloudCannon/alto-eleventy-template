@@ -419,6 +419,39 @@ _inputs:
 # Snippets
 
 _snippets:
+  twitter:
+    snippet: "{% twitter id user %}"
+    params:
+      id:
+        parser: argument
+        options:
+          editor_key: twitter_id
+          style:
+            output: inline
+          model:
+            editor_key: twitter_id
+            optional: false
+      user:
+        parser: argument
+        options:
+          editor_key: user_id
+          style:
+            output: inline
+    inline: false
+    preview:
+      text: Tweet
+      subtext: Twitter tweet embed.
+      icon: message
+    picker_preview:
+      text: Tweet
+      subtext: Twitter tweet embed.
+      icon: message
+    _inputs:
+      id: 
+        type: text
+      user:
+        type: text
+
   diffcode:
     snippet: "{% capture content %}\n```[[lang]][[inner]]```\n{% endcapture %}{% diffcode content %}"
     params: 

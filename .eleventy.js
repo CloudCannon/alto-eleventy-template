@@ -13,6 +13,8 @@ const markdownOptions = {
 };
 const markdownRenderer = markdownIt(markdownOptions).use(markdownItNamedHeadings);
 
+// shortcode requires
+const twitter = require('./src/_includes/shortcodes/twitter')
 const diffcode = require('./src/_includes/shortcodes/diffcode')
 const tree = require('./src/_includes/shortcodes/tree')
 
@@ -23,6 +25,7 @@ module.exports = function(eleventyConfig) {
     return `<figure${className ? ` class="${className}"` : ''}><img src="${image}" />${caption ? `<figcaption>${caption}</figcaption>` : ''}</figure>`;
   });
 
+  eleventyConfig.addShortcode("twitter", twitter)
   eleventyConfig.addShortcode("diffcode", diffcode)
   eleventyConfig.addShortcode("tree", tree)
 
