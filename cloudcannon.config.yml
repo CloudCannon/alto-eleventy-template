@@ -472,7 +472,7 @@ _snippets:
             output: inline
           model:
             editor_key: className
-            optional: false
+            optional: true
       pageTitle:
         parser: argument
         options:
@@ -481,7 +481,7 @@ _snippets:
             output: inline
           model:
             editor_key: pageTitle
-            optional: false
+            optional: true
     inline: false
     preview:
       text: Vimeo    
@@ -494,6 +494,66 @@ _snippets:
       id: 
         type: text
       user:
+        type: text
+
+  youtube:
+    snippet: "{% youtube id className pageTitle %}"
+    params:
+      id:
+        parser: argument
+        options:
+          editor_key: vimeo_id
+          style:
+            output: inline
+          model:
+            editor_key: vimeo_id
+            optional: false
+      autoplay:
+        parser: argument
+        options:
+          editor_key: autoplay
+          style:
+            output: inline
+          model:
+            editor_key: autoplay
+            optional: true
+      pageTitle:
+        parser: argument
+        options:
+          editor_key: pageTitle
+          style:
+            output: inline
+          model:
+            editor_key: pageTitle
+            optional: true
+      className:
+        parser: argument
+        options:
+          editor_key: className
+          style:
+            output: inline
+          model:
+            editor_key: className
+            optional: true
+    inline: false
+    preview:
+      text: YouTube    
+      icon: smart_display
+    picker_preview:
+      text: YouTube
+      subtext: YouTube video embed.
+      icon: smart_display
+    _inputs:
+      id: 
+        type: text
+      autoplay:
+        type: select
+        options:
+          values:
+            - true
+      pageTitle:
+        type: text
+      className:
         type: text
 
   diffcode:
