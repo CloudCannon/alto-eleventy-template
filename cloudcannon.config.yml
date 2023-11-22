@@ -421,21 +421,9 @@ _inputs:
 _snippets:
   twitter:
     snippet: "{% twitter [[twitter_id]] [[user_id]] %}"
-    params:
-      twitter_id:
-        parser: argument
-        options:
-          editor_key: id
-          style:
-            output: inline
-      user_id:
-        parser: argument
-        options:
-          editor_key: user
-          style:
-            output: inline
     inline: false
     definitions:
+      chortcode_name: twitter
       named_args:
         - editor_key: id
           type: string
