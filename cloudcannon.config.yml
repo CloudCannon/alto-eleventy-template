@@ -420,20 +420,14 @@ _inputs:
 
 _snippets:
   twitter:
-    snippet: "{% twitter [[twitter_id]] [[user_id]] %}"
-    params:
-      twitter_id:
-        parser: argument
-        options:
-          editor_key: id
-          style:
-            output: inline
-      user_id:
-        parser: argument
-        options:
-          editor_key: user
-          style:
-            output: inline
+    template: eleventy_liquid_shortcode_positional_args
+    definitions:
+      shortcode_name: twitter
+      positional_args:
+        - editor_key: twitter_id
+          type: string
+        - editor_key: user_id
+          type: string    
     inline: false
     preview:
       text: Tweet
