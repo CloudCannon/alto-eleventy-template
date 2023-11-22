@@ -417,6 +417,8 @@ _inputs:
   
 
 # Snippets
+_snippets_imports:
+  eleventy_liquid: true
 
 _snippets:
   twitter:
