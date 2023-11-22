@@ -39,5 +39,3 @@ CloudCannon uses Alto as the documentation site template for our own open-source
 * <a target="_blank" rel="noopener" href="https://rosey.app/">Rosey</a>
 * <a target="_blank" rel="noopener" href="https://reseed.app/">Reseed</a>
 
-
-{% vimeo "641660551" "" "Video title here" %}
