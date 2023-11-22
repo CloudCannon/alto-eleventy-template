@@ -476,10 +476,13 @@ _snippets:
         type: text
       link_url:
         type: url
+        label: Link
       link_target:
-        type: text
+        type: text        
+        hidden: !link_url
       link_rel:
         type: text
+        hidden: !link_url
       attr:
         type: text
       attrlink:
@@ -657,7 +660,7 @@ paths:
   data: _data
   collections: docs
   includes: _includes
-  layouts: _includes/layouts
+  layouts: _includes/layouts  
   uploads: assets/images/uploads
 
 # Lets you control the look and behaviour of the Source Editor.
