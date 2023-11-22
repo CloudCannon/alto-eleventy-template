@@ -465,9 +465,348 @@ _snippets:
             text:
               - key: display_name
     _select_data:
-      languages:
-        - key: as3
-          display_name : ActionScript 3
+      languages:        
+        - key: 1c
+          display_name: 1C
+        - key: abnf
+          display_name: ABNF
+        - key: accesslog
+          display_name: Access logs
+        - key: ada
+          display_name: Ada        
+        - key: arduino
+          display_name: Arduino (C++ w/Arduino libs)
+        - key: armasm
+          display_name: ARM assembler
+        - key: avrasm
+          display_name: AVR assembler
+        - key: actionscript
+          display_name: Actionscript
+        - key: angelscript
+          display_name: AngelScript
+        - key: apache
+          display_name: Apache
+        - key: applescript
+          display_name: AppleScript
+        - key: arcade
+          display_name: Arcade
+        - key: asciidoc
+          display_name: AsciiDoc
+        - key: aspectj
+          display_name: AspectJ
+        - key: autohotkey
+          display_name: AutoHotkey
+        - key: autoit
+          display_name: AutoIt
+        - key: awk
+          display_name: Awk
+        - key: bash
+          display_name: Bash
+        - key: basic
+          display_name: Basic
+        - key: bnf
+          display_name: BNF
+        - key: brainfuck
+          display_name: Brainfuck
+        - key: csharp
+          display_name: C#
+        - key: c
+          display_name: C
+        - key: cpp
+          display_name: C++
+        - key: cal
+          display_name: C/AL
+        - key: cos
+          display_name: Cache Object Script
+        - key: cmake
+          display_name: CMake
+        - key: coq
+          display_name: Coq
+        - key: csp
+          display_name: CSP
+        - key: css
+          display_name: CSS
+        - key: capnproto
+          display_name: Cap'n Proto
+        - key: clojure
+          display_name: Clojure
+        - key: coffeescript
+          display_name: CoffeeScript
+        - key: crmsh
+          display_name: Crmsh
+        - key: crystal
+          display_name: Crystal
+        - key: d
+          display_name: D
+        - key: dart
+          display_name: Dart
+        - key: dpr
+          display_name: Delphi
+        - key: diff
+          display_name: Diff
+        - key: django
+          display_name: Django
+        - key: dns
+          display_name: DNS Zone file
+        - key: dockerfile
+          display_name: Dockerfile
+        - key: dos
+          display_name: DOS
+        - key: dsconfig
+          display_name: dsconfig
+        - key: dts
+          display_name: DTS (Device Tree)
+        - key: dust
+          display_name: Dust
+        - key: ebnf
+          display_name: EBNF
+        - key: elixir
+          display_name: Elixir
+        - key: elm
+          display_name: Elm
+        - key: erlang
+          display_name: Erlang
+        - key: excel
+          display_name: Excel
+        - key: fsharp
+          display_name: F#
+        - key: fix
+          display_name: FIX
+        - key: fortran
+          display_name: Fortran
+        - key: gcode
+          display_name: G-Code
+        - key: gams
+          display_name: Gams
+        - key: gauss
+          display_name: GUASS
+        - key: gherkin
+          display_name: Gherkin
+        - key: go
+          display_name: Go
+        - key: golo
+          display_name: Golo
+        - key: gradle
+          display_name: Gradle
+        - key: graphql
+          display_name: GraphQL
+        - key: groovy
+          display_name: Groovy
+        - key: xml
+          display_name: HTML, XML
+        - key: http
+          display_name: HTTP
+        - key: haml
+          display_name: Haml
+        - key: handlebars
+          display_name: Handlebars
+        - key: haskell
+          display_name: Haskell
+        - key: haxe
+          display_name: Haxe
+        - key: hy
+          display_name: Hy
+        - key: ini
+          display_name: Ini, TOML
+        - key: inform7
+          display_name: Inform7
+        - key: irpf90 
+          display_name: IRPF90
+        - key: json
+          display_name: JSON
+        - key: java
+          display_name: Java
+        - key: javascript
+          display_name: JavaScript
+        - key: julia
+          display_name: Julia
+        - key: julia-repl
+          display_name: Julia REPL
+        - key: kotlin
+          display_name: Kotlin
+        - key: tex
+          display_name: LaTeX
+        - key: leaf
+          display_name: Leaf
+        - key: lasso
+          display_name: Lasso
+        - key: less
+          display_name: Less
+        - key: ldif
+          display_name: LDIF
+        - key: lisp
+          display_name: Lisp
+        - key: livecodeserver
+          display_name: LiveCode Server
+        - key: livescript
+          display_name: LiveScript
+        - key: lua
+          display_name: Lua
+        - key: makefile
+          display_name: Makefile
+        - key: markdown
+          display_name: Markdown
+        - key: mathematica
+          display_name: Mathematica
+        - key: matlab
+          display_name: Matlab
+        - key: maxima
+          display_name: Maxima
+        - key: mel
+          display_name: Maya Embedded Language
+        - key: mercury
+          display_name: Mercury
+        - key: mips
+          display_name: MIPS Assembler
+        - key: mizar
+          display_name: Mizar
+        - key: mojolicious
+          display_name: Mojolicious
+        - key: monkey
+          display_name: Monkey
+        - key: moonscript
+          display_name: Moonscript
+        - key: n1ql
+          display_name: N1QL
+        - key: nsis
+          display_name: NSIS
+        - key: nginx
+          display_name: Nginx
+        - key: nim
+          display_name: Nim
+        - key: nix
+          display_name: Nix
+        - key: ocaml
+          display_name: OCaml
+        - key: objectivec
+          display_name: Objective C
+        - key: glsl
+          display_name: OpenGL Shading Language
+        - key: openscad
+          display_name: OpenSCAD
+        - key: ruleslanguage
+          display_name: Oracle Rules Language
+        - key: oxygene
+          display_name: Oxygene
+        - key: pf
+          display_name: PF
+        - key: php
+          display_name: PHP
+        - key: parser3
+          display_name: Parser3
+        - key: perl
+          display_name: Perl
+        - key: plaintext
+          display_name: Plaintext
+        - key: pony
+          display_name: Pony
+        - key: pgsql
+          display_name: PostgreSQL & PL/pgSQL
+        - key: powershell
+          display_name: PowerShell
+        - key: processing
+          display_name: Processing
+        - key: prolog
+          display_name: Prolog
+        - key: properties
+          display_name: Properties
+        - key: proto
+          display_name: Protocol Buffers
+        - key: puppet
+          display_name: Puppet
+        - key: python
+          display_name: Python
+        - key: profile
+          display_name: Python profiler results
+        - key: python-repl
+          display_name: Python REPL
+        - key: k
+          display_name: Q
+        - key: qml
+          display_name: QML
+        - key: r
+          display_name: R
+        - key: reasonml
+          display_name: ReasonML
+        - key: rib
+          display_name: RenderMan RIB
+        - key: rsl
+          display_name: RenderMan RSL
+        - key: graph
+          display_name: Roboconf
+        - key: ruby
+          display_name: Ruvy
+        - key: rust
+          display_name: Rust
+        - key: SAS
+          display_name: SAS
+        - key: scss
+          display_name: SCSS
+        - key: sql
+          display_name: SQL
+        - key: p21
+          display_name: STEP Part 21
+        - key: scala
+          display_name: Scala
+        - key: scheme
+          display_name: Scheme
+        - key: scilab
+          display_name: Scilab
+        - key: shell
+          display_name: Shell
+        - key: smali
+          display_name: Smali
+        - key: smalltalk
+          display_name: Smalltalk
+        - key: sml
+          display_name: SML
+        - key: stan
+          display_name: Stan
+        - key: stata
+          display_name: Stata
+        - key: stylus
+          display_name: Stylus
+        - key: subunit
+          display_name: SubUnit
+        - key: swift
+          display_name: Swift
+        - key: tcl
+          display_name: Tcl
+        - key: tap
+          display_name: Test Anything Protocol
+        - key: thrift
+          display_name: Thrift
+        - key: tp
+          display_name: TP
+        - key: twig
+          display_name: Twig
+        - key: typescript
+          display_name: TypeScript
+        - key: vbnet
+          display_name: VB.Net
+        - key: vbscript
+          display_name: VBScript
+        - key: vhdl
+          display_name: VHDL
+        - key: vala
+          display_name: Vala
+        - key: verilog
+          display_name: Verilog
+        - key: vim
+          display_name: Vim Script
+        - key: axapta
+          display_name: X++
+        - key: x86asm
+          display_name: x86 Assembly
+        - key: xl
+          display_name: XL
+        - key: xquery
+          display_name: XQuery
+        - key: yml
+          display_name: YAML
+        - key: zephir
+          display_name: Zephir
+
 
   gist:
     template: eleventy_liquid_shortcode_positional_args
