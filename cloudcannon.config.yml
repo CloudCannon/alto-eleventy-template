@@ -420,21 +420,21 @@ _inputs:
 
 _snippets:
   twitter:
-    snippet: "{% twitter id user %}"
+    snippet: "{% twitter twitter_id user_id %}"
     params:
-      id:
+      twitter_id:
         parser: argument
         options:
-          editor_key: twitter_id
+          editor_key: id
           style:
             output: inline
           model:
-            editor_key: twitter_id
+            editor_key: id
             optional: false
-      user:
+      user_id:
         parser: argument
         options:
-          editor_key: user_id
+          editor_key: user
           style:
             output: inline
     inline: false
@@ -497,7 +497,7 @@ _snippets:
         type: text
 
   youtube:
-    snippet: "{% youtube id className pageTitle %}"
+    snippet: "{% youtube id autoplay className pageTitle %}"
     params:
       id:
         parser: argument
@@ -593,6 +593,7 @@ _snippets:
         type: code
       language:
         type: text
+
   tree:
     snippet: "{% capture treecontent %}[[inner]]{% endcapture %}{% tree treecontent %}"
     params: 
