@@ -429,25 +429,35 @@ _snippets:
         - editor_key: src
           type: string
         - editor_key: pageTitle
-          type: string    
+          type: string
+          optional: true    
         - editor_key: alt
           type: string
+          optional: true
         - editor_key: link_url
           type: string
+          optional: true
         - editor_key: link_target
           type: string
+          optional: true
         - editor_key: link_rel
           type: string
+          optional: true
         - editor_ley: attr
           type: string
+          optional: true
         - editor_key: attrlink
           type: string
+          optional: true
         - editor_key: className
           type: string
+          optional: true
         - editor_key: width
           type: string
+          optional: true
         - editor_key: height
           type: string
+          optional: true
     inline: false
     preview:
       text: Figure
@@ -649,7 +659,7 @@ paths:
   includes: _includes
   layouts: _includes/layouts
   static: assets
-  uploads: assets/images/uploads
+  uploads: images/uploads
 
 # Lets you control the look and behaviour of the Source Editor.
 source_editor:
