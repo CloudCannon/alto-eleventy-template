@@ -445,35 +445,16 @@ _snippets:
       user_id:
         type: text
   vimeo:
-    snippet: "{% vimeo id className pageTitle %}"
-    params:
-      id:
-        parser: argument
-        options:
-          editor_key: vimeo_id
-          style:
-            output: inline
-          model:
-            editor_key: vimeo_id
-            optional: false
-      className:
-        parser: argument
-        options:
-          editor_key: className
-          style:
-            output: inline
-          model:
-            editor_key: className
-            optional: true
-      pageTitle:
-        parser: argument
-        options:
-          editor_key: pageTitle
-          style:
-            output: inline
-          model:
-            editor_key: pageTitle
-            optional: true
+    template: eleventy_liquid_shortcode_positional_args
+    definitions:
+      shortcode_name: vimeo
+      positional_args:
+        - editor_key: vimeo_id
+          type: string
+        - editor_key: className
+          type: string  
+        - editor_key: pageTitle
+          type: string
     inline: false
     preview:
       text: Vimeo    
@@ -483,49 +464,25 @@ _snippets:
       subtext: Vimeo video embed.
       icon: videocam
     _inputs:
-      id: 
+      vimeo_id: 
         type: text
-      user:
+      className:
+        type: text
+      pageTitle:
         type: text
   youtube:
-    snippet: "{% youtube id autoplay className pageTitle %}"
-    params:
-      id:
-        parser: argument
-        options:
-          editor_key: vimeo_id
-          style:
-            output: inline
-          model:
-            editor_key: vimeo_id
-            optional: false
-      autoplay:
-        parser: argument
-        options:
-          editor_key: autoplay
-          style:
-            output: inline
-          model:
-            editor_key: autoplay
-            optional: true
-      pageTitle:
-        parser: argument
-        options:
-          editor_key: pageTitle
-          style:
-            output: inline
-          model:
-            editor_key: pageTitle
-            optional: true
-      className:
-        parser: argument
-        options:
-          editor_key: className
-          style:
-            output: inline
-          model:
-            editor_key: className
-            optional: true
+    template: eleventy_liquid_shortcode_positional_args
+    definitions:
+      shortcode_name: youtube
+      positional_args:
+        - editor_key: youtube_id
+          type: string
+        - editor_key: autoplay
+          type: string  
+        - editor_key: pageTitle
+          type: string
+        - editor_key: className
+          type: string
     inline: false
     preview:
       text: YouTube    
@@ -535,7 +492,7 @@ _snippets:
       subtext: YouTube video embed.
       icon: smart_display
     _inputs:
-      id: 
+      youtube_id: 
         type: text
       autoplay:
         type: select
