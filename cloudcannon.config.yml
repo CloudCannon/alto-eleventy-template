@@ -463,7 +463,7 @@ _snippets:
           value_key: key
           preview:
             text:
-              - key: didplay_name
+              - key: display_name
     _select_data:
       languages:
         - key: as3
