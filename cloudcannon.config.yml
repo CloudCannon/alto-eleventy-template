@@ -479,10 +479,10 @@ _snippets:
         label: Link
       link_target:
         type: text        
-        hidden: !link_url
+        hidden: "!link_url"
       link_rel:
         type: text
-        hidden: !link_url
+        hidden: "!link_url"
       attr:
         type: text
       attrlink:
