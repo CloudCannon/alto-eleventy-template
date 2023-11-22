@@ -420,7 +420,7 @@ _inputs:
 
 _snippets:
   twitter:
-    snippet: "{% twitter [[twitter_id]] [[user_id]] %}"
+    snippet: "{% twitter {{ twitter_id }} {{ user_id }} %}"
     params:
       twitter_id:
         parser: argument
