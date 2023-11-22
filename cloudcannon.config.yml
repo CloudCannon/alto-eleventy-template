@@ -421,6 +421,47 @@ _snippets_imports:
   eleventy_liquid: true
 
 _snippets:
+  highlight:
+    snippet: "{% capture content %}\n```[[lang]][[inner]]```\n{% endcapture %}{% diffcode content %}"
+    params: 
+      lang:
+        parser: argument
+        options:
+          editor_key: language
+          forbidden_tokens: ["```"]
+          style: 
+            output: inline
+          model:
+            editor_key: language
+            optional: true
+      inner:
+        parser: content
+        options:  
+          editor_key: inner_code
+          style:
+            output: block
+            block:
+              leading: "\n"
+              trailing: "\n"
+              indent: ""
+    inline: false
+    preview:
+      text: Highlight
+      subtext: Code block with syntax highlighting
+      icon: code
+    picker_preview:
+      text: Highlight
+      subtext: Code block with syntax highlighting
+      icon: code
+    _inputs:
+      inner_code:
+        type: code
+      language:
+        type: select
+        options:
+          values:
+            - as3 : ActionScript 3
+
   gist:
     template: eleventy_liquid_shortcode_positional_args
     definitions:
