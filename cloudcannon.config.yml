@@ -988,7 +988,10 @@ _snippets:
           type: string
     inline: false
     preview:
-      text: Vimeo    
+      text: Vimeo  
+      subtext:
+        - key: vimeo_id
+        - Vimeo video embed.
       icon: videocam
     picker_preview:
       text: Vimeo
@@ -997,10 +1000,16 @@ _snippets:
     _inputs:
       vimeo_id: 
         type: text
+        label: ID
+        comment: ID of the Vimeo video to embed.
       className:
         type: text
+        label: Class
+        comment: HTML class of the embedded video.
       pageTitle:
         type: text
+        comment: Title of the video embed for accessibility.
+        
   youtube:
     template: eleventy_liquid_shortcode_positional_args
     definitions:
