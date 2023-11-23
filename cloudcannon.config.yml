@@ -881,8 +881,9 @@ _snippets:
       text: Figure
       subtext: Full-width image with an optional caption below.
       icon: image
-      gallery:
-        image: src
+      image: 
+        - key: src
+        - No preview available
     picker_preview:
       text: Figure
       subtext: Full-width image with an optional caption below.
