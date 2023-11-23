@@ -448,7 +448,7 @@ _snippets:
     preview:
       text: Highlight
       subtext: 
-        - key: lang
+        - key: language
         - Code block with syntax highlighting.
     picker_preview:
       text: Highlight
