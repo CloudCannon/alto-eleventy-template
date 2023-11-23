@@ -175,6 +175,10 @@ _structures:
 
   
 _inputs:
+  trim_left:
+    hidden: true
+  trim_right:
+    hidden: true
   title: 
     type: text
     label: Page Title
@@ -809,7 +813,6 @@ _snippets:
           display_name: YAML
         - key: zephir
           display_name: Zephir
-
 
   gist:
     template: eleventy_liquid_shortcode_positional_args
