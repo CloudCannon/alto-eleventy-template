@@ -1030,6 +1030,9 @@ _snippets:
       text: 
         - key: page_title
         - YouTube    
+      subtext:
+        - key: youtube_id
+        - YouTube video embed.
       icon: smart_display
     picker_preview:
       text: YouTube
@@ -1043,9 +1046,9 @@ _snippets:
       autoplay:
         comment: Automatically start video playback.
         type: select
-        options:
-          values:
-            - true
+          options:
+            values:
+              - true
       page_title:
         type: text
         comment: Title of the video embed for accessibility.
@@ -1091,6 +1094,7 @@ _snippets:
         type: code
       language:
         type: text
+        
   tree:
     snippet: "{% capture treecontent %}[[inner]]{% endcapture %}{% tree treecontent %}"
     params: 
