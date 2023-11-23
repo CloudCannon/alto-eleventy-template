@@ -813,6 +813,17 @@ _snippets:
           display_name: YAML
         - key: zephir
           display_name: Zephir
+          
+  summary_divider:
+    snippet: "{% summary_divider %}"
+    inline: true
+    preview:
+      text: Summary Divider
+      icon: summarize
+    picker_preview:
+      text: Summary Divider
+      subtext: Marker to show which content to include in the article summary.
+      icon: summarize
 
   gist:
     template: eleventy_liquid_shortcode_positional_args
