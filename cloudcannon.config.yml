@@ -447,15 +447,16 @@ _snippets:
     inline: false
     preview:
       text: Highlight
-      subtext: Code block with syntax highlighting
+      subtext: Code block with syntax highlighting.
       icon: code
     picker_preview:
       text: Highlight
-      subtext: Code block with syntax highlighting
+      subtext: Code block with syntax highlighting.
       icon: code
     _inputs:
       inner_code:
         type: code
+        label: Content
       language:
         type: select
         options:
