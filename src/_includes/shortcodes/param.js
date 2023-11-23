@@ -1,4 +1,5 @@
 const matter = require('gray-matter')
+const fs = require('fs')
 
 module.exports = param_name => {
   const str = fs.readFileSync(this.page.inputPath, 'utf8')
