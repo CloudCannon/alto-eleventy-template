@@ -19,7 +19,7 @@ const youtube = require('./src/_includes/shortcodes/youtube')
 const vimeo = require('./src/_includes/shortcodes/vimeo')
 const figure = require('./src/_includes/shortcodes/figure')
 const gist = require('./src/_includes/shortcodes/gist')
-const summary_divider = require('./src/_includes/shortcodes/summary_divider')
+const summary_divider = require('./src/_includes/shortcodes/summaryDivider')
 
 const diffcode = require('./src/_includes/shortcodes/diffcode')
 const tree = require('./src/_includes/shortcodes/tree')
