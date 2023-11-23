@@ -984,8 +984,10 @@ _snippets:
           type: string
         - editor_key: class_name
           type: string  
+          optional: true
         - editor_key: page_title
           type: string
+          optional: true
     inline: false
     preview:
       text: 
@@ -1021,10 +1023,13 @@ _snippets:
           type: string
         - editor_key: autoplay
           type: string  
+          optional: true
         - editor_key: page_title
           type: string
+          optional: true
         - editor_key: class_name
           type: string
+          optional: true
     inline: false
     preview:
       text: 
