@@ -982,13 +982,15 @@ _snippets:
       positional_args:
         - editor_key: vimeo_id
           type: string
-        - editor_key: className
+        - editor_key: class_name
           type: string  
-        - editor_key: pageTitle
+        - editor_key: page_title
           type: string
     inline: false
     preview:
-      text: Vimeo  
+      text: 
+        - key: page_title
+        - Vimeo  
       subtext:
         - key: vimeo_id
         - Vimeo video embed.
@@ -1002,11 +1004,11 @@ _snippets:
         type: text
         label: ID
         comment: ID of the Vimeo video to embed.
-      className:
+      class_name:
         type: text
         label: Class
         comment: HTML class of the embedded video.
-      pageTitle:
+      page_title:
         type: text
         comment: Title of the video embed for accessibility.
         
