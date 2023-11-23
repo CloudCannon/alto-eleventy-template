@@ -824,6 +824,27 @@ _snippets:
       text: Summary Divider
       subtext: Marker to show which content to include in the article summary.
       icon: summarize
+      
+  param:
+    snippet: eleventy_liquid_shortcode_positional_args
+    definitions:
+      shortcode_name: param
+      positional_args:
+        - editor_key: param_name
+          type: string
+    inline: true
+    preview:
+      text: Param
+      icon: data_object
+    picker_preview:
+      text: Param
+      subtext: Front matter parameter.
+      icon: data_object
+    _inputs:
+      param_name:
+        type: text
+        label: Param
+        comment: The frontmatter parameter to display.
 
   gist:
     template: eleventy_liquid_shortcode_positional_args
