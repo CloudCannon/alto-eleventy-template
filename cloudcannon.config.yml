@@ -892,6 +892,8 @@ _snippets:
       subtext: Full-width image with an optional caption below.
       icon: image
     _inputs:
+      trimLeft:
+        hidden: true
       src:
         type: image
         comment: The image to display.
@@ -934,6 +936,8 @@ _snippets:
       height:
         type: text
         comment: Height attribute of the image.
+      trimRight:
+        hidden: true
   twitter:
     template: eleventy_liquid_shortcode_positional_args
     definitions:
