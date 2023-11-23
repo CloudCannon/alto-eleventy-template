@@ -852,6 +852,9 @@ _snippets:
         - editor_key: alt
           type: string
           optional: true
+        - editor_key: caption
+          type: string
+          optional: true
         - editor_key: link_url
           type: string
           optional: true
@@ -891,29 +894,46 @@ _snippets:
     _inputs:
       src:
         type: image
+        comment: The image to display.
       pageTitle:
         type: text
+        comment: Image title.
       alt:
         type: text
+        comment: Alternate text if the image cannot be displayed.
+      caption:
+        type: text
+        comment: Image caption.
       link_url:
         type: url
         label: Link
+        comment: URL for the image to link to.
       link_target:
-        type: text        
+        type: text
+        label: Target
+        comment: Target attribute for the image link.
         hidden: "!link_url"
       link_rel:
         type: text
+        label: Rel
+        comment: Rel attribute for the image link.
         hidden: "!link_url"
       attr:
         type: text
+        comment: Image attribution text.
       attrlink:
         type: url
+        comment: URL for the attribution to link to.
       className:
         type: text
+        label: Class
+        comment: Class attribute of the HTML figure tag.
       width:
         type: text
+        comment: Width attribute of the image.
       height:
         type: text
+        comment: Height attribute of the image.
   twitter:
     template: eleventy_liquid_shortcode_positional_args
     definitions:
