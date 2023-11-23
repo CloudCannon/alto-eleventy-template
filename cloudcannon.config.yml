@@ -447,8 +447,11 @@ _snippets:
     inline: false
     preview:
       text: Highlight
-      subtext: Code block with syntax highlighting.
-      icon: code
+      - key: image_path
+      - Image missing
+      subtext: 
+        - key: lang
+        - Code block with syntax highlighting.
     picker_preview:
       text: Highlight
       subtext: Code block with syntax highlighting.
