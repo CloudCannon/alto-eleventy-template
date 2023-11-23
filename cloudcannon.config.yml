@@ -826,7 +826,9 @@ _snippets:
     inline: false
     preview:
       text: Gist
-      subtext: GitHub Gist embed.
+      subtext: 
+        - key: username
+        - GitHub Gist embed.
       icon: integration_instructions
     picker_preview:
       text: Gist
@@ -835,10 +837,15 @@ _snippets:
     _inputs:
       username:
         type: text
+        comment: Name of the user that owns the Gist.
       id:
+        label: ID
         type: text
+        comment: ID of the Gist to embed.
       file:
-        type: text      
+        type: text    
+        comment: Name of the file to embed, if the Gist contains multiple.
+        
   figure:
     template: eleventy_liquid_shortcode_positional_args
     definitions:
