@@ -450,6 +450,7 @@ _snippets:
       subtext: 
         - key: language
         - Code block with syntax highlighting.
+      icon: code
     picker_preview:
       text: Highlight
       subtext: Code block with syntax highlighting.
