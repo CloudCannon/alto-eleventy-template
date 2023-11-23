@@ -1,8 +1,4 @@
-const matter = require('gray-matter')
-const fs = require('fs')
-
 module.exports = function(param_name) {
-  const str = fs.readFileSync(this.page.inputPath, 'utf8')
-  const data = matter(str).data
-  return data[param_name] ? data[param_name] : `Param ${param_name} not found.`
+  let filtered = this.ctx.environments.collections["all"].filter(collection => collection.page.inputPath === this.page.inputPath)
+  return filtered[0].data[param_name].toString()
 }

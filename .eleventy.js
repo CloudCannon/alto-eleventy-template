@@ -21,6 +21,7 @@ const figure = require('./src/_includes/shortcodes/figure')
 const gist = require('./src/_includes/shortcodes/gist')
 const summary_divider = require('./src/_includes/shortcodes/summaryDivider')
 const param = require('./src/_includes/shortcodes/param')
+const reference = require('./src/_includes/shortcodes/reference')
 
 const diffcode = require('./src/_includes/shortcodes/diffcode')
 const tree = require('./src/_includes/shortcodes/tree')
@@ -35,6 +36,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addShortcode("gist", gist)
   eleventyConfig.addShortcode("summary_divider", summary_divider)
   eleventyConfig.addShortcode("param", param)
+  eleventyConfig.addShortcode("ref", reference)
   eleventyConfig.addShortcode("diffcode", diffcode)
   eleventyConfig.addShortcode("tree", tree)
 
