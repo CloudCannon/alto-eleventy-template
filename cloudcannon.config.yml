@@ -1046,9 +1046,9 @@ _snippets:
       autoplay:
         comment: Automatically start video playback.
         type: select
-          options:
-            values:
-              - true
+        options:
+          values:
+            - "true"
       page_title:
         type: text
         comment: Title of the video embed for accessibility.
