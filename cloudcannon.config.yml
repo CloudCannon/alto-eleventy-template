@@ -447,8 +447,6 @@ _snippets:
     inline: false
     preview:
       text: Highlight
-      - key: image_path
-      - Image missing
       subtext: 
         - key: lang
         - Code block with syntax highlighting.
