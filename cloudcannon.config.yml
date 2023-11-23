@@ -902,8 +902,6 @@ _snippets:
       subtext: Full-width image with an optional caption below.
       icon: image
     _inputs:
-      trim_left:
-        hidden: true
       src:
         type: image
         comment: The image to display.
@@ -946,31 +944,37 @@ _snippets:
       height:
         type: text
         comment: Height attribute of the image.
-      trim_right:
-        hidden: true
+        
   twitter:
     template: eleventy_liquid_shortcode_positional_args
     definitions:
       shortcode_name: twitter
       positional_args:
+        - editor_key: user_id
+          type: string 
         - editor_key: twitter_id
           type: string
-        - editor_key: user_id
-          type: string    
     inline: false
     preview:
       text: Tweet
-      subtext: Twitter tweet embed.
+      subtext: 
+        - key: user_id
+        - Twitter tweet embed.
       icon: message
     picker_preview:
       text: Tweet
       subtext: Twitter tweet embed.
       icon: message
     _inputs:
-      twitter_id: 
-        type: text
       user_id:
         type: text
+        label: User
+        comment: Name of the user that made the tweet.
+      twitter_id: 
+        type: text
+        label: ID
+        comment: ID of the tweet to embed.
+        
   vimeo:
     template: eleventy_liquid_shortcode_positional_args
     definitions:
