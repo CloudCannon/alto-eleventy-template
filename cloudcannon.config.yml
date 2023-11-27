@@ -1095,22 +1095,27 @@ _snippets:
         comment: HTML class of the embedded video.
         
   diffcode:
-    template: eleventy_liquid_shortcode_positional_args
-    definitions:
-      shortcode_name: diffcode
-      positional_args:
-        - editor_key: language
-          type: string
+    snippet: "{% capture content %}{{inner}}{% endcapture %}{% diffcode lang content %}"
+    params: 
+      lang:
+        parser: argument
+        options:
+          editor_key: language
           forbidden_tokens: ["```"]
-        - editor_key: inner_code
-          type: string  
-          parser: content
-          options:
-            style:
+          style: 
+            output: inline
+          model:
+            editor_key: language
+      inner:
+        parser: content
+        options:  
+          editor_key: inner_code
+          style:
             output: block
             block:
               leading: "\n"
-              trailing: "\n"    
+              trailing: "\n"
+              indent: ""
     inline: false
     preview:
       text: Diffcode
@@ -1121,10 +1126,10 @@ _snippets:
       subtext: Difference formatter
       icon: difference
     _inputs:
+      inner_code:
+        type: code
       language:
         type: text
-      inner_code:
-        type: code      
         
   tree:
     snippet: "{% capture treecontent %}[[inner]]{% endcapture %}{% tree treecontent %}"
