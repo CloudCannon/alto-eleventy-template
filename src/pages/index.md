@@ -38,3 +38,12 @@ CloudCannon uses Alto as the documentation site template for our own open-source
 * <a target="_blank" rel="noopener" href="https://pagefind.app/">Pagefind</a>
 * <a target="_blank" rel="noopener" href="https://rosey.app/">Rosey</a>
 * <a target="_blank" rel="noopener" href="https://reseed.app/">Reseed</a>
+
+{% capture content %}
+new PagefindUI({
+    element: "#search",
++    mergeIndex: [{
++        bundlePath: "https://docs.example.com/_pagefind"
++    }]
+})
+{% endcapture %}{% diffcode "js" content %}

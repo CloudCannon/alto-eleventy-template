@@ -1095,28 +1095,22 @@ _snippets:
         comment: HTML class of the embedded video.
         
   diffcode:
-    snippet: "{% capture content %}\n```[[lang]][[inner]]```\n{% endcapture %}{% diffcode content %}"
-    params: 
-      lang:
-        parser: argument
-        options:
-          editor_key: language
+    template: eleventy_liquid_shortcode_positional_args
+    definitions:
+      shortcode_name: diffcode
+      positional_args:
+        - editor_key: language
+          type: string
           forbidden_tokens: ["```"]
-          style: 
-            output: inline
-          model:
-            editor_key: language
-            optional: true
-      inner:
-        parser: content
-        options:  
-          editor_key: inner_code
-          style:
+        - editor_key: inner_code
+          type: string  
+          parser: content
+          options:
+            style:
             output: block
             block:
               leading: "\n"
-              trailing: "\n"
-              indent: ""
+              trailing: "\n"    
     inline: false
     preview:
       text: Diffcode
