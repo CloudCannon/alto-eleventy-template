@@ -1103,8 +1103,7 @@ _snippets:
           type: string
         - editor_key: inner
           parser: content
-          options:  
-            editor_key: inner_code
+          options:              
             style:
               output: block
               block:
@@ -1123,7 +1122,7 @@ _snippets:
     _inputs:
       lang:
         type: text        
-      inner_code:
+      inner:
         type: code
         label: Inner Code
   
