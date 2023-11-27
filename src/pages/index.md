@@ -13,11 +13,6 @@ SEO_options:
 draft: false
 tags: page
 ---
-
-{% ref "customizing_alto/_index.md" %}
-{% ref "_index.md" %}
-{% ref "docs/configuring-navigation-footer" %}
-
 Alto is a minimal and modern Hugo theme for static documentation sites, created by and optimized for <a target="_blank" rel="noopener" href="https://cloudcannon.com">CloudCannon</a>.
 
 Designed initially for open-source software, Alto has many built-in features to aid both site users and documentation writers:
@@ -29,7 +24,7 @@ Designed initially for open-source software, Alto has many built-in features to 
 * Flexible grouping options for docs pages;
 * Automatic anchor links to subheadings;
 * Optional announcement banner;
-* Styled with Sass;
+* Styled with Sass;&nbsp;
 * Optimized for editing and publishing on CloudCannon.
 
 To get started with Alto, create a CloudCannon account and check out the [Getting Started documentation](/docs/).
