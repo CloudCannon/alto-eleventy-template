@@ -10,5 +10,5 @@ SEO_options:
     image:
     description:
 draft: false
-tags: page
+tags: 
 ---
