@@ -1103,6 +1103,15 @@ _snippets:
           type: string
         - editor_key: content
           type: string
+          parser: content
+          options:  
+            editor_key: inner_code
+            style:
+              output: block
+              block:
+                leading: "\n"
+                trailing: "\n"
+                indent: ""
     inline: true
     preview:
       text: Diffcode
