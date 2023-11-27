@@ -17,6 +17,13 @@ Alto is a minimal and modern Hugo theme for static documentation sites, created 
 
 Designed initially for open-source software, Alto has many built-in features to aid both site users and documentation writers:
 
+{% include 'shortcodes/diffcode.html', lang: "js" inner: "new PagefindUI({
+    element: \"#search\",
++    mergeIndex: [{
++        bundlePath: \"https://docs.example.com/_pagefind\"
++    }]
+})" %}
+
 * Built-in static search with <a target="_blank" rel="noopener" href="https://pagefind.app">Pagefind</a>;
 * Twelve pre-configured Hugo shortcodes, including diff syntax highlighting, GitHub Gist embeds, and tree diagram formatter;
 * Light/dark modes, with configurable color palettes;
