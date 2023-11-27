@@ -19,8 +19,6 @@ module.exports = function(path, lang, output){
         if(path[path.length-1] === "/")
             path = path.split("").splice(0,path.length-1).join("")        
 
-        console.log(path)
-
         candidates = filtered.map(filtered_collection => {
             let url = filtered_collection.page.url.indexOf(`/${path}/`)
             if(url !== -1)
