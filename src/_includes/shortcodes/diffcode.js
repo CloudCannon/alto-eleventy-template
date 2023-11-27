@@ -1,7 +1,7 @@
 const markdownIt = require("markdown-it");
 var hljs = require('highlight.js'); // https://highlightjs.org
 
-module.exports = content => {
+module.exports = (language,content) => {
     let mainBlock = content.replace(/(^```.*)/mg, "")
     
     let diff = mainBlock.split("\n").filter(x => x !== "").join("\n")
