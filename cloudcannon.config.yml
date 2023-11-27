@@ -1095,7 +1095,7 @@ _snippets:
         comment: HTML class of the embedded video.
         
   diffcode:
-    snippet: "{% capture content %}test{% endcapture %}{% diffcode lang content %}"
+    snippet: "Testing"
     params: 
       lang:
         parser: argument
