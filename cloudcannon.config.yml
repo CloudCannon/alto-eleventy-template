@@ -179,6 +179,16 @@ _inputs:
     hidden: true
   trim_right:
     hidden: true
+  permalink:
+    hidden: true
+  layout:
+    hidden: true
+  eleventyNavigation:
+    comment: Options for displaying the page in the sidebar navigation
+  eleventyNavigation.order:
+    comment: The order of the page in the sidebar group
+  tags:
+    comment: The name of the section the page is nested under in the sidebar navigation (use 'page' for Root pages)
   title: 
     type: text
     label: Page Title

@@ -6,12 +6,12 @@ layout: layouts/page.html
 eleventyNavigation:
   key: Home
   order: 0
+tags: page
 SEO_options:
   title:
   image:
   description:
 draft: false
-tags: page
 ---
 Alto is a minimal and modern Hugo theme for static documentation sites, created by and optimized for <a target="_blank" rel="noopener" href="https://cloudcannon.com">CloudCannon</a>.
 

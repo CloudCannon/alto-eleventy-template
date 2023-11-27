@@ -1,17 +1,17 @@
 ---
-_schema: default
+_schema: page
+permalink: /docs/configuring-navigation-footer/
 title: Configuring the navigation and footer
+layout: layouts/page.html
 eleventyNavigation:
   key: Configuring the navigation and footer
   order: 0
-draft: false
 tags: Customizing Alto
-layout: layouts/page.html
-permalink: /docs/configuring-navigation-footer/
 SEO_options:
   title:
   image:
   description:
+draft: false
 ---
 You can easily configure Alto's Navigation and Footer items within CloudCannon, under Alto's **Site Settings**.
 

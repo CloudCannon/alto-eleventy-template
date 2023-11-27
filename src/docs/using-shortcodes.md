@@ -1,17 +1,17 @@
 ---
 _schema: page
+permalink: /docs/using-shortcodes/
 title: Using Shortcodes
+layout: layouts/page.html
 eleventyNavigation:
   key: Using Shortcodes
   order: 2
-draft: false
 tags: page
-layout: layouts/page.html
-permalink: /docs/using-shortcodes/
 SEO_options:
   title:
   image:
   description:
+draft: false
 ---
 Alto comes with twelve pre-configured shortcodes for a range of common documentation requirements:&nbsp;
 

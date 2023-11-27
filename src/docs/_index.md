@@ -1,17 +1,17 @@
 ---
 _schema: page
+permalink: /docs/
 title: Getting Started
+layout: layouts/page.html
 eleventyNavigation:
   key: Getting Started
   order: 1
-layout: layouts/page.html
-permalink: /docs/
+tags: page
 SEO_options:
   title:
   image:
   description:
 draft: false
-tags: page
 ---
 To create a new Alto site and deploy it immediately to CloudCannon, click <a target="_blank" rel="noopener" href="https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/alto-hugo-template">here</a>.
 
