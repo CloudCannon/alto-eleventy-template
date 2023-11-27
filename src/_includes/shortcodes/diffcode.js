@@ -1,4 +1,5 @@
 const markdownIt = require("markdown-it");
+var utils = require('markdown-it/lib/common/utils');
 var hljs = require('highlight.js'); // https://highlightjs.org
 
 module.exports = content => {
