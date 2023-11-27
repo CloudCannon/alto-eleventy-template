@@ -1102,7 +1102,6 @@ _snippets:
         - editor_key: lang
           type: string
         - editor_key: inner
-          type: string
           parser: content
           options:  
             editor_key: inner_code
