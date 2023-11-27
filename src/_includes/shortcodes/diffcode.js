@@ -35,7 +35,7 @@ module.exports = content => {
               } catch (__) {}
             }
         
-            return '<pre class="chroma"><code class="">' + md.utils.escapeHtml(str) + '</code></pre>';
+            return '<pre class="chroma"><code class="">' + utils.escapeHtml(str) + '</code></pre>';
         }
     }).render(content)
     return result
