@@ -1104,8 +1104,6 @@ _snippets:
           forbidden_tokens: ["```"]
           style: 
             output: inline
-          model:
-            editor_key: language
       inner:
         parser: content
         options:  
