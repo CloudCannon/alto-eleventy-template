@@ -1121,10 +1121,10 @@ _snippets:
       subtext: Difference formatter
       icon: difference
     _inputs:
-      inner_code:
-        type: code
       language:
         type: text
+      inner_code:
+        type: code      
         
   tree:
     snippet: "{% capture treecontent %}[[inner]]{% endcapture %}{% tree treecontent %}"
