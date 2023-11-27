@@ -39,6 +39,3 @@ CloudCannon uses Alto as the documentation site template for our own open-source
 * <a target="_blank" rel="noopener" href="https://rosey.app/">Rosey</a>
 * <a target="_blank" rel="noopener" href="https://reseed.app/">Reseed</a>
 
-{% capture treecontent %}
-testing a tree
-{% endcapture %}{% tree treecontent %}
