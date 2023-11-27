@@ -185,6 +185,9 @@ _inputs:
     hidden: true
   eleventyNavigation:
     comment: Options for displaying the page in the sidebar navigation
+  eleventyNavigation.key:
+    label: Sidebar Nav Title
+    comment: The name of the page shown in the sidebar navigation
   eleventyNavigation.order:
     comment: The order of the page in the sidebar group
   tags:
