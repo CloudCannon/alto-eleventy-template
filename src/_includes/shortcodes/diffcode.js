@@ -1,8 +1,8 @@
 const markdownIt = require("markdown-it");
 var hljs = require('highlight.js'); // https://highlightjs.org
 
-module.exports = (language,content) => {
-    let mainBlock = "```js\n" + content + "```"
+module.exports = content => {
+    let mainBlock = content.replace(/(^```.*)/mg, "")
     
     let diff = mainBlock.split("\n").filter(x => x !== "").join("\n")
     diff = diff.replace(/(?:^([+-]).*$)/mg, "$1")
@@ -14,9 +14,9 @@ module.exports = (language,content) => {
     var result = markdownIt({
         html:true,
         highlight: function (str, lang) {            
-            if (language && hljs.getLanguage(language)) {
+            if (lang && hljs.getLanguage(lang)) {
               try {     
-                let highlight = hljs.highlight(str, { language: language, ignoreIllegals: true });
+                let highlight = hljs.highlight(str, { language: lang, ignoreIllegals: true });
                 highlight = highlight.value;    
                 let result = "";
                 highlight.split("\n").forEach((line, i) => {
@@ -29,7 +29,7 @@ module.exports = (language,content) => {
                         result += line + "\n"
                 })
                 
-                return `<pre class="chroma"><code class="" data-lang='${language}'>` +
+                return `<pre class="chroma"><code class="" data-lang='${lang}'>` +
                        result +
                        '</code></pre>';
               } catch (__) {}
@@ -37,6 +37,6 @@ module.exports = (language,content) => {
         
             return '<pre class="chroma"><code class="">' + md.utils.escapeHtml(str) + '</code></pre>';
         }
-    }).render(mainBlock)
+    }).render(content)
     return result
   }
