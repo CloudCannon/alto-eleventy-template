@@ -24,7 +24,7 @@ Designed initially for open-source software, Alto has many built-in features to 
 * Flexible grouping options for docs pages;
 * Automatic anchor links to subheadings;
 * Optional announcement banner;
-* Styled with Sass;
+* Styled with Sass;&nbsp;
 * Optimized for editing and publishing on CloudCannon.
 
 To get started with Alto, create a CloudCannon account and check out the [Getting Started documentation](/docs/).
