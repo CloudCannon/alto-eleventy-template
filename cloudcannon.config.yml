@@ -1095,24 +1095,24 @@ _snippets:
         comment: HTML class of the embedded video.
         
   diffcode:
-    template: eleventy_liquid_shortcode_positional_args
+    template: eleventy_liquid_include
     definitions:
-      shortcode_name: diffcode
-      positional_args:
-        - editor_key: language
+      include_name: shortcodes/diffcode.html
+      named_args:
+        - editor_key: lang
           type: string
-        - editor_key: content
+        - editor_key: inner
           type: string
           parser: content
           options:  
-            editor_key: inner_code
+            editor_key: inner
             style:
               output: block
               block:
                 leading: "\n"
                 trailing: "\n"
                 indent: ""
-    inline: true
+    inline: false
     preview:
       text: Diffcode
       subtext: Difference formatter
@@ -1122,9 +1122,9 @@ _snippets:
       subtext: Difference formatter
       icon: difference
     _inputs:
-      language:
+      lang:
         type: text        
-      content:
+      inner:
         type: code
         label: Inner Code
   
