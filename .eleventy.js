@@ -61,15 +61,11 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
-  eleventyConfig.addFilter("pagefind_ignore", text => {
+  eleventyConfig.addFilter("process_content", text => {
     text = text.replace(/(<h[2-6]\sid=\"([^\"]+)\"\s?>)(.+)(<\/h[2-6]+>)/, "$1<a data-pagefind-ignore class=\"anchor\" href=\"#$2\" title=\"Link to $3\">#</a>$3$4")
     text = text.replace(/<code>([^<]{0,30})<\/code>/, "<code class=\"inline\">$1</code>")
     return text;
   });
-
-  eleventyConfig.on('eleventy.after', () => {
-    execSync(`npx pagefind --source _site --glob \"**/*.html\"`, { encoding: 'utf-8' })
-  })
 
   return {
     dir: {
