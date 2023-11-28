@@ -6,7 +6,7 @@ Alto is a minimal and modern Eleventy template for static documentation sites, c
 Designed initially for open-source software, Alto has many built-in features to aid both site users and documentation writers:
 
 - Built-in static search with [Pagefind](https://pagefind.app);
-- Twelve pre-configured Hugo shortcodes, including diff syntax highlighting, GitHub Gist embeds, and tree diagram formatter;
+- Eleven pre-configured shortcodes, including diff syntax highlighting, GitHub Gist embeds, and tree diagram formatter;
 - Light/dark modes, with configurable color palettes;
 - Easily configurable navigation and footer content;
 - Flexible grouping options for docs pages;
