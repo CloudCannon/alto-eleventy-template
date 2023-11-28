@@ -82,7 +82,7 @@ Pages can be placed outside of a group (alongside the homepage) by assigning the
 This template provides a `diffcode` shortcode that can provide source highlighting alongside diff highlighting. This shortcode should wrap a markdown code block that has a tagged language. For example, from the pagefind docs:
 
 ````markdown
-{{< diffcode >}}
+{% capture content %}
 ```js
 new PagefindUI({
     element: "#search",
@@ -91,7 +91,8 @@ new PagefindUI({
 +    }]
 })
 ```
-{{< /diffcode >}}
+{% endcapture %}
+{% diffcode content %}
 ````
 
 The code block will be rendered with the leading `+` removed from each line, and those lines will then be highlighted green to represent a diff.
@@ -101,7 +102,7 @@ The code block will be rendered with the leading `+` removed from each line, and
 This template provides a `tree` shortcode that can help render an ASCII directory tree structure. The given `char` (default `>`) will be replaced with the appropriate box drawing character from the supported set. For example:
 
 ```markdown
-{{% tree %}}
+{% capture treecontent %}
 package.json
 _includes/
 >> _layouts/
@@ -110,7 +111,7 @@ _includes/
 >> file.liquid
 _site/
 >> index.html
-{{% /tree %}}
+{% endcapture %}{% tree treecontent %}
 ```
 
 Will output:
