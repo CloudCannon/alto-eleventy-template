@@ -50,10 +50,10 @@ Required information can be seen in the `data/meta.yml`
 
 This site template is intended to be used as a documentation site with a landing page.
 
-- `content/_index.md` should be used for the homepage.
-- `content/docs/_index.md` represents the `/docs/` page.
+- `pages/index.md` should be used for the homepage.
+- `docs/_index.md` represents the `/docs/` page.
 - All other pages in `docs` will live at their respective path.
-  - i.e. `content/docs/this/that.md` represents `/docs/this/that/`
+  - i.e. `docs/this/that.md` represents `/docs/this/that/`
 
 ### Front matter
 
