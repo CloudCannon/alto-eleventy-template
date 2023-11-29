@@ -28,14 +28,6 @@ console.log("Hello World!")
 ```
 {% endcapture %}{% diffcode content %}
 
-{% param, "hello" %}
-
-
-
-{% summary_divider %}
-
-
-
 
 {% capture treecontent %}
 package.json
