@@ -50,12 +50,6 @@ console.log("Hello World!")
 
 
 
-
-
-
-
-
-
 {% capture treecontent %}
 package.json
 _includes/
@@ -70,8 +64,6 @@ _site/
 
 
 {% twitter, "hi" "123" %}
-
-{% vimeo, "" "" "" %}
 
 {% youtube, "uutCnHzKsrc" "" "tester" "test" %}
 
