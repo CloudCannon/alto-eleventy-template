@@ -22,8 +22,6 @@ Alto is a minimal and modern Hugo theme for static documentation sites, created 
 +    }]
 })" %}
 
-{% figure, "/assets/images/uploads/alto.png" "test" "test" "tester" "/test/" "" "" "" "" "" "" %}
-
 {% capture content %}
 ```javascript
 console.log("Hello World!")
