@@ -1,1 +1,1 @@
-# npx -y pagefind@latest --source public
+npx -y pagefind@latest --source public
