@@ -22,27 +22,6 @@ Alto is a minimal and modern Hugo theme for static documentation sites, created 
 +    }]
 })" %}
 
-{% capture content %}
-```javascript
-console.log("Hello World!")
-```
-{% endcapture %}{% diffcode content %}
-
-
-{% capture treecontent %}
-package.json
-_includes/
->> _layouts/
->  >> default.liquid
->  >> page.liquid
->> file.liquid
-_site/
->> index.html
-{% endcapture %}{% tree treecontent %}
-
-
-
-{% twitter, "hi" "123" %}
 
 
 Designed initially for open-source software, Alto has many built-in features to aid both site users and documentation writers:
