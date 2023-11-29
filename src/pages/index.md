@@ -63,7 +63,6 @@ _site/
 
 {% twitter, "hi" "123" %}
 
-{% youtube, "uutCnHzKsrc" "" "tester" "test" %}
 
 Designed initially for open-source software, Alto has many built-in features to aid both site users and documentation writers:
 
