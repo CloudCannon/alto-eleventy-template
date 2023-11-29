@@ -30,21 +30,10 @@ console.log("Hello World!")
 
 {% param, "hello" %}
 
-<div class="c-card c-card--clickable"><div class="c-card__preview"><p class="u-hide-when-loaded">No preview available</p></div><div class="c-card__content"><div class="c-card__heading"><div class="c-card__icon "><cc-icon name="mdi:data_object" class="u-hide-when-loaded"></cc-icon></div><div class="c-card__heading-content"><p class="c-card__text c-card__text--full-height">Param</p></div></div></div></div>
-
-<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" width="15" title="Click and drag to move" height="15" role="presentation" draggable="true" />
-
-
-
-
-
 
 
 {% summary_divider %}
 
-<div class="c-card c-card--clickable"><div class="c-card__preview"><p class="u-hide-when-loaded">No preview available</p></div><div class="c-card__content"><div class="c-card__heading"><div class="c-card__icon "><cc-icon name="mdi:summarize" class="u-hide-when-loaded"></cc-icon></div><div class="c-card__heading-content"><p class="c-card__text c-card__text--full-height">Summary Divider</p></div></div></div></div>
-
-<img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" width="15" title="Click and drag to move" height="15" role="presentation" draggable="true" />
 
 
 
