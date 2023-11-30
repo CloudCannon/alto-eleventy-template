@@ -6,12 +6,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.cloudcannon.com/css/TT-Norms-Pro_400_500_800.css" rel="stylesheet" type="text/css">
 
-        <link rel="apple-touch-icon" sizes="180x180" href="{{ site.Data.meta.favicon.apple_touch_icon }}">
-        <link rel="icon" type="image/png" sizes="32x32" href="{{ site.Data.meta.favicon.large_icon }}">
-        <link rel="icon" type="image/png" sizes="16x16" href="{{ site.Data.meta.favicon.small_icon }}">
-        <link rel="shortcut icon" href="{{ site.Data.meta.favicon.shortcut_icon }}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ meta.favicon.apple_touch_icon }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ meta.favicon.large_icon }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ meta.favicon.small_icon }}">
+        <link rel="shortcut icon" href="{{ meta.favicon.shortcut_icon }}">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
+
+        <meta content="{{title}} | {{ meta.project_name }}" property="og:title">
+        <meta content="{{title}} | {{ meta.project_name }}" property="twitter:title">
+        <meta content="en_US" property="og:locale">
+        <meta content="{{ content | excerpt }}" name="description">
+        <meta content="{{ content | excerpt }}" property="og:description">     
+        <link rel="canonical" href="{{ permalink }}" >
+        <meta content="{{permalink}}" property="og:url">
+        <meta content="{{ site.Data.meta.project_name }}" property="og:site_name">
+        <meta data-pagefind-meta="image[content]" content="{{ meta.default_og_image }}" property="og:image">
+        <meta content="article" property="og:type">
+        <meta content="summary_large_image" name="twitter:card">
+        <meta content="{{ meta.default_og_image }}" property="twitter:image">   
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
         <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">

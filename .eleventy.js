@@ -42,8 +42,8 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.setLibrary("md", markdownRenderer);
 
-  eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
-  eleventyConfig.addDataExtension("yml", (contents) => yaml.load(contents));
+  eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
+  eleventyConfig.addDataExtension("yml", contents => yaml.load(contents));
 
   eleventyConfig.addPassthroughCopy("src/assets/images");
   
@@ -65,6 +65,11 @@ module.exports = function(eleventyConfig) {
     text = text.replace(/(<h[2-6]\sid=\"([^\"]+)\"\s?>)(.+)(<\/h[2-6]+>)/, "$1<a data-pagefind-ignore class=\"anchor\" href=\"#$2\" title=\"Link to $3\">#</a>$3$4")
     text = text.replace(/<code>([^<]{0,30})<\/code>/, "<code class=\"inline\">$1</code>")
     return text;
+  });
+
+  eleventyConfig.addFilter("excerpt", content => {
+    content = content.replace(/(<([^>]+)>)/gi, "");
+    return content.substr(0, content.lastIndexOf(" ", 200)) + "...";
   });
 
   return {
