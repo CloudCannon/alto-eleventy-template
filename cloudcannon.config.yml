@@ -919,7 +919,7 @@ _snippets:
         - editor_key: link_rel
           type: string
           optional: true
-        - editor_ley: attr
+        - editor_key: attr
           type: string
           optional: true
         - editor_key: attrlink

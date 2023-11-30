@@ -25,5 +25,5 @@ Each page on Alto has a 'Parent Section' property, which allows you to group rel
 
 You can also change the order of the page within the sidebar group using 'Weight'.
 
-{% figure "/assets/images/uploads/screenshot-2023-07-27-at-1-17-49-pm.png" %}
+{% figure "/assets/images/uploads/screenshot-2023-07-27-at-1-17-49-pm.png" "" "alt" "caption" "#link" "target" "rel" "attr" "attrlink" "className" "300" "200" %}
 
