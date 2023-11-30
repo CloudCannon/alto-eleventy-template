@@ -1,4 +1,4 @@
-# alto-eleventy-template
+# Alto Eleventy Template
 
 Alto is a minimal and modern Eleventy template for static documentation sites, created by and optimized for [CloudCannon](https://cloudcannon.com). Browse through a [live demo](https://holy-ball.cloudvent.net/).
  
@@ -50,10 +50,10 @@ Required information can be seen in the `data/meta.yml`
 
 This site template is intended to be used as a documentation site with a landing page.
 
-- `content/_index.md` should be used for the homepage.
-- `content/docs/_index.md` represents the `/docs/` page.
+- `pages/index.md` should be used for the homepage.
+- `docs/_index.md` represents the `/docs/` page.
 - All other pages in `docs` will live at their respective path.
-  - i.e. `content/docs/this/that.md` represents `/docs/this/that/`
+  - i.e. `docs/this/that.md` represents `/docs/this/that/`
 
 ### Front matter
 
@@ -82,7 +82,7 @@ Pages can be placed outside of a group (alongside the homepage) by assigning the
 This template provides a `diffcode` shortcode that can provide source highlighting alongside diff highlighting. This shortcode should wrap a markdown code block that has a tagged language. For example, from the pagefind docs:
 
 ````markdown
-{{< diffcode >}}
+{% capture content %}
 ```js
 new PagefindUI({
     element: "#search",
@@ -91,7 +91,8 @@ new PagefindUI({
 +    }]
 })
 ```
-{{< /diffcode >}}
+{% endcapture %}
+{% diffcode content %}
 ````
 
 The code block will be rendered with the leading `+` removed from each line, and those lines will then be highlighted green to represent a diff.
@@ -101,7 +102,7 @@ The code block will be rendered with the leading `+` removed from each line, and
 This template provides a `tree` shortcode that can help render an ASCII directory tree structure. The given `char` (default `>`) will be replaced with the appropriate box drawing character from the supported set. For example:
 
 ```markdown
-{{% tree %}}
+{% capture treecontent %}
 package.json
 _includes/
 >> _layouts/
@@ -110,7 +111,7 @@ _includes/
 >> file.liquid
 _site/
 >> index.html
-{{% /tree %}}
+{% endcapture %}{% tree treecontent %}
 ```
 
 Will output:
