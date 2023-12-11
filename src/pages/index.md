@@ -47,3 +47,9 @@ CloudCannon uses Alto as the documentation site template for our own open-source
 
 * <a href="https://reseed.app/" target="_blank" rel="noopener">Reseed</a>
 
+{% include 'shortcodes/diffcode.html', lang: "javascript" inner: "new PagefindUI({
+    element: \"#search\",
++    mergeIndex: [{
++        bundlePath: \"https://docs.example.com/_pagefind\"
++    }]
+})" %}
