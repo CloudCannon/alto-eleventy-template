@@ -392,6 +392,12 @@ _inputs:
   variable:
     type: color
     comment: Text color for codeblock variable names.
+  diffcode-highlighted: 
+    type: color
+    options:
+      format: hex
+      alpha: true
+    comment: Background color for highlighted lines in diffcode shortcode.
   diffcode-added: 
     type: color
     options:
