@@ -43,8 +43,8 @@ CloudCannon uses Alto as the documentation site template for our own open-source
 
 {% include 'shortcodes/diffcode.html', lang: "js" inner: "new PagefindUI({
     element: \"#search\",
-+    mergeIndex: [{
-+        bundlePath: \"https://docs.example.com/_pagefind\"
+~    mergeIndex: [{
+-        bundlePath: \"https://docs.example.com/_pagefind\"
 +    }]
 })" %}
 
