@@ -15,10 +15,6 @@ draft: false
 ---
 Alto is a minimal and modern Hugo theme for static documentation sites, created by and optimized for <a target="_blank" rel="noopener" href="https://cloudcannon.com">CloudCannon</a>.
 
-{% figure, "/assets/images/uploads/screenshot-2023-07-27-at-1-17-49-pm.png" "test" "test" "testing" "" "" "" "test" "50" "50" "50" "50" %}
-
-{% figure, "/assets/images/uploads/demo-background.png" "1" "" "3" "4" "5" "6" "" "7" "8" "9" "10" %}
-
 Designed initially for open-source software, Alto has many built-in features to aid both site users and documentation writers:
 
 * Built-in static search with <a target="_blank" rel="noopener" href="https://pagefind.app">Pagefind</a>;
