@@ -4,7 +4,7 @@ title: new doc
 layout: layouts/page.html
 eleventyNavigation:
   key: new doc test
-  order: '5'
+  order: '4'
 tags:
 draft: false
 ---
