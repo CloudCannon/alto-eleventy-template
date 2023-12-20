@@ -12,12 +12,12 @@ collections_config:
     path: pages
     icon: feed
     schemas:
-      page:
+      default:
         path: src/schemas/page.md
     add_options:
       - name: Add Site Page
         editor: content
-        schema: page
+        schema: default
     _enabled_editors:
       - content
       - visual
