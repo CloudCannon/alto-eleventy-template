@@ -1,6 +1,6 @@
 ---
 title:
-layout:
+layout: layouts/page.html
 permalink:
 eleventyNavigation:
   key:
