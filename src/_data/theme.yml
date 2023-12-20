@@ -1,7 +1,7 @@
 colors:
   light:
     typography:
-      text: '#141ce2'
+      text: '#000000'
       flip-text: '#ffffff'
       text-main: '#363636'
       text-bright: '#000000'
