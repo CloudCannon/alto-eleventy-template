@@ -184,6 +184,7 @@ _inputs:
   layout:
     hidden: true
   eleventyNavigation:
+    label: Navigation
     comment: Options for displaying the page in the sidebar navigation
   eleventyNavigation.key:
     label: Sidebar Nav Title
