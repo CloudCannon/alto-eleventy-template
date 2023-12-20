@@ -13,13 +13,13 @@ SEO_options:
   description:
 draft: false
 ---
-Alto is a minimal and modern Hugo theme for static documentation sites, created by and optimized for <a href="https://cloudcannon.com" target="_blank" rel="noopener">CloudCannon</a>.
+Alto is a minimal and modern Eleventy theme for static documentation sites, created by and optimized for <a href="https://cloudcannon.com" target="_blank" rel="noopener">CloudCannon</a>.
 
 Designed initially for open-source software, Alto has many built-in features to aid both site users and documentation writers:
 
 * Built-in static search with <a href="https://pagefind.app" target="_blank" rel="noopener">Pagefind</a>;
 
-* Twelve pre-configured Hugo shortcodes, including diff syntax highlighting, GitHub Gist embeds, and tree diagram formatter;
+* Eleven pre-configured shortcodes, including diff syntax highlighting, GitHub Gist embeds, and tree diagram formatter;
 
 * Light/dark modes, with configurable color palettes;
 
