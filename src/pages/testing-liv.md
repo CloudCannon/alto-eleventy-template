@@ -1,7 +1,7 @@
 ---
 _schema: default
 title: 'testing: liv'
-layout:
+layout: layouts/page.html
 permalink:
 eleventyNavigation:
     key: 'testing: liv'

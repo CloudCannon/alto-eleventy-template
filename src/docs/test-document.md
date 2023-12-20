@@ -1,6 +1,7 @@
 ---
 _schema: default
 title: test document
+layout: layouts/page.html
 eleventyNavigation:
   key: Testing this
   order: '3'
