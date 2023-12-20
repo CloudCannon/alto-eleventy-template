@@ -5,7 +5,7 @@ layout: layouts/page.html
 eleventyNavigation:
   key: new doc test
   order: '4'
-tags:
+tags: page
 draft: false
 ---
 this is a new doc im trying
