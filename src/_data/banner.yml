@@ -1,7 +1,7 @@
 enable_banner: true
 html: <p>This banner is completely optional, and can be shown until a set date!</p>
 id: alto-banner
-show_until: 2023-07-20T07:28:00Z
+show_until: 2024-01-31T00:00:00Z
 _inputs:
   enable_banner:
     type: switch
@@ -13,7 +13,9 @@ _inputs:
     type: text
     label: Unique ID
     hidden: '!enable_banner'
-    comment: Prevents repeated display for users who close the banner, changing ID resets for all.
+    comment: >-
+      Prevents repeated display for users who close the banner, changing ID
+      resets for all.
   show_until:
     type: date
     comment: Date to stop showing the banner
