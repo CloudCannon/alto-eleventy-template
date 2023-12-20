@@ -13,7 +13,7 @@ collections_config:
     icon: feed
     schemas:
       page:
-        path: schemas/page.md
+        path: src/schemas/page.md
     add_options:
       - name: Add Site Page
         editor: content
@@ -71,7 +71,7 @@ collections_config:
     disable_add_folder: true
     schemas:
       default:
-        path: schemas/docs.md
+        path: src/schemas/docs.md
     add_options:
       - name: Read the docs
         icon: local_library
