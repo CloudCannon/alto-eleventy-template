@@ -27,5 +27,5 @@ The top-level groups (tags: 'page') are in the order that they are first encount
 
 Pages can be placed outside of a group (alongside the homepage) by assigning them the `tags` of `page`.
 
-{% figure "/assets/images/uploads/screenshot-2023-12-21-at-12.08.25-pm" "" "alt" "" "#link" "target" "rel" "" "attrlink" "className" "300" "200" %}
+{% figure "/assets/images/uploads/screenshot-2023-12-21-at-12.08.25-pm.png" "" "alt" "" "#link" "target" "rel" "" "attrlink" "className" "300" "200" %}
 
