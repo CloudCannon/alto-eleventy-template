@@ -15,4 +15,4 @@ tags:
 ---
 hello is this working? and can i see everything
 
-{% figure, "" "" "" "" "" "" "" "" "" "" "" "" %}
+{% figure, "/assets/images/uploads/alto.png" "" "" "" "" "" "" "" "" "" "" "" %}
