@@ -12,8 +12,8 @@ colors:
       form-placeholder: '#949494'
       form-text: '#1d1d1d'
     background_colors:
-      body-bg-color: '#fff'
-      background-body: '#fff'
+      body-bg-color: '#ffffff'
+      background-body: '#ffffff'
       background: '#efefef'
       background-alt: '#f7f7f7'
     code_block_colors:
@@ -23,7 +23,7 @@ colors:
       code-params: '#de935f'
       code-values: '#b5bd68'
       variable: '#39a33c'
-      code: '#000'
+      code: '#000000'
     button_colors:
       button-base: '#d0cfcf'
       button-hover: '#9b9b9b'
@@ -33,9 +33,9 @@ colors:
     border_colors:
       border: '#dbdbdb'
     focus_colors:
-      focus: '#0096bfab'
+      focus: rgba(150, 191, 171, 0)
     shortcode_colors:
-      diffcode-added: '#ddffddcf'
+      diffcode-added: rgba(255, 221, 207, 0.867)
       diffcode-removed: '#ffc8c8'
       diffcode-highlighted: '#fffece'
     pagefind_colors:
