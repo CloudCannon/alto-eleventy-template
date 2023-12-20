@@ -4,7 +4,7 @@ nav_links:
     link_url: https://github.com/cloudcannon/alto-hugo-template
     link_label: 1.0.0
     link_icon_path: /assets/images/github.svg
-  - link_title: Twitter
+  - link_title:
     link_url: https://twitter.com
     link_label: 'Twitter '
     link_icon_path: /assets/images/uploads/alto.png
