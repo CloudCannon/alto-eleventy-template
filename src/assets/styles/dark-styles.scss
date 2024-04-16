@@ -32,6 +32,14 @@ body{
          
             filter: invert(99%) sepia(1%) saturate(1715%) hue-rotate(198deg) brightness(121%) contrast(100%);
         }
+
+        /* Dark mode */
+            @media (prefers-color-scheme: dark) {
+                body {
+                    background-color: black;
+                    color: white;
+                }
+            }
     
     }
 
