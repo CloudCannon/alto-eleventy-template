@@ -1,5 +1,8 @@
 # Alto Eleventy Template
 
+> [!IMPORTANT]
+> This template is no longer actively maintained but remains available for reference and learning. For production sites, we recommend our [modern templates](https://cloudcannon.com/templates/).
+
 Alto is a minimal and modern Eleventy template for static documentation sites, created by and optimized for [CloudCannon](https://cloudcannon.com). Browse through a [live demo](https://secret-lapwing.cloudvent.net/).
 
 [![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/alto-eleventy-template)
